@@ -1,0 +1,12 @@
+CREATE TABLE DEPENDENTE(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR,
+    dataDeNascimento DATE
+);
+
+CREATE TABLE PESSOA(
+    id SERIAL PRIMARY KEY,
+    CPF VARCHAR,
+    nome VARCHAR,
+    dependente_id INTEGER REFERENCES DEPENDENTE(id)
+);

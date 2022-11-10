@@ -1,0 +1,2 @@
+FROM postgres:15.0
+ADD create-tables.sql /docker-entrypoint-initdb.d

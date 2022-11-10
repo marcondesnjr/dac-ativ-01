@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dac_atv
+    ports:
+      - "6543:5432"
+
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile-webapp
+    restart: always
+    ports:
+      - "8888:8080"
