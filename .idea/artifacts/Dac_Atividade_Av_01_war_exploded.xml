@@ -19,6 +19,8 @@
           <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.5.0" />
           <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:5.0.1" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.0-alpha1" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:jakarta:12.0.0" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.7" />
         </element>
       </element>
       <element id="directory" name="META-INF">

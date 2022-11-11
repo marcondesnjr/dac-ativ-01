@@ -1,11 +1,11 @@
-package dac.atv.av.model;
+package dac.atv.av.service.dto;
 
 import lombok.Data;
 
 import java.time.LocalDate;
 
 @Data
-public class Dependente {
+public class DependenteDto {
 
     private Long id;
     private String nome;

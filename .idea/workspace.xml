@@ -10,43 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4bedc5-4375-4243-827a-113e3d143148" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Dac_Atividade_Av_01_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Dac_Atividade_Av_01_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile-db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile-webapp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create-tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/config/DataSourceConfigImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/model/Dependente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/model/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/DependenteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/PessoaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config-docker.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layout/layout.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Dac_Atividade_Av_01_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Dac_Atividade_Av_01_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/model/Dependente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/model/Dependente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="Jsp File" />
         <option value="Interface" />
+        <option value="jsf" />
         <option value="Class" />
       </list>
     </option>
@@ -92,9 +69,16 @@
         <option name="mavenHome" value="/usr/share/maven" />
       </MavenGeneralSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="dev" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2HKsaAMwyzigyAEMbvJ2ZTrDW7l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -110,15 +94,24 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/layout" />
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.TomEE 10.0.27">
-    <configuration name="All in Dac-Atividade-Av-01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in Dac-Atividade-Av-01" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Dac-Atividade-Av-01" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -129,7 +122,7 @@
     <configuration name="TomEE 10.0.27" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Dac-Atividade-Av-01-1.0-SNAPSHOT/" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="Dac-Atividade-Av-01:war exploded">
@@ -211,6 +204,21 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Dac-Atividade-Av-01:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Tomcat 10.0.23" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.23" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -300,28 +308,11 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.All in Dac-Atividade-Av-01" />
       <item itemvalue="Tomcat Server.Tomcat 10.0.23" />
       <item itemvalue="TomEE Server.TomEE 10.0.27" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.All in Dac-Atividade-Av-01" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -333,7 +324,8 @@
       <updated>1668045175189</updated>
       <workItem from="1668045176625" duration="1119000" />
       <workItem from="1668046705459" duration="5128000" />
-      <workItem from="1668083206624" duration="17143000" />
+      <workItem from="1668083206624" duration="36827000" />
+      <workItem from="1668190778271" duration="5666000" />
     </task>
     <servers />
   </component>

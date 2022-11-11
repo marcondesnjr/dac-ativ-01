@@ -1,0 +1,12 @@
+html {
+    display: grid;
+    min-height: 100vh;
+}
+
+.content{
+    height: 100%;
+}
+
+.cadastro-pessoa{
+    max-width: 500px;
+}
