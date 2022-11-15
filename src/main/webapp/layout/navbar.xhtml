@@ -10,9 +10,13 @@
     <p:menubar>
         <p:menuitem value="Home" url="/"/>
         <p:submenu label="Pessoa">
-            <p:menuitem value="Cadastrar Novo" url="pessoa/add.xhtml" />
-            <p:menuitem value="Buscar" url="pessoa/find.xhtml" />
+            <p:menuitem value="Cadastrar Novo" url="${request.contextPath}/pessoa/add.xhtml" />
+            <p:menuitem value="Buscar" url="${request.contextPath}/pessoa/list.xhtml" />
         </p:submenu>
+        <p:submenu label="Dependente">
+            <p:menuitem value="Buscar" url="${request.contextPath}/dependente/list.xhtml" />
+        </p:submenu>
+
     </p:menubar>
 </ui:composition>
 </html>

@@ -10,20 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4bedc5-4375-4243-827a-113e3d143148" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layout/layout.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Dac_Atividade_Av_01_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Dac_Atividade_Av_01_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/model/Dependente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/model/Dependente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/config/DataSourceConfigImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/config/DataSourceConfigImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/dependente/AddDependente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/validator/DependenteDtNascValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/validator/DependenteDtNascValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/validator/DependenteNameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/validator/DependenteNameValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/PessoaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/PessoaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dependente/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dependente/add.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,7 @@
         <option value="Jsp File" />
         <option value="Interface" />
         <option value="jsf" />
+        <option value="NamedBean" />
         <option value="Class" />
       </list>
     </option>
@@ -90,10 +94,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "fileTemplates"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -110,7 +114,96 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/layout" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.TomEE 10.0.27">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final">
+    <configuration name="JBoss/WildFly 27.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 27.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="sdk-current" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/dac-atividade-01" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="Dac-Atividade-Av-01:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="43481" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Dac-Atividade-Av-01:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="" />
+        <option name="USERNAME" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Dac-Atividade-Av-01" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Dac-Atividade-Av-01" />
       <option name="PACKAGE_NAME" value="" />
@@ -120,14 +213,13 @@
       </method>
     </configuration>
     <configuration name="TomEE 10.0.27" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Dac-Atividade-Av-01-1.0-SNAPSHOT/" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="Dac-Atividade-Av-01:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/Dac-Atividade-Av-01" />
+            <option name="CONTEXT_PATH" value="/Dac-Atividade-Av-01-1.0-SNAPSHOT" />
           </settings>
         </artifact>
       </deployment>
@@ -203,7 +295,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install" />
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Dac-Atividade-Av-01:war exploded" />
         </option>
@@ -309,6 +401,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final" />
       <item itemvalue="JUnit.All in Dac-Atividade-Av-01" />
       <item itemvalue="Tomcat Server.Tomcat 10.0.23" />
       <item itemvalue="TomEE Server.TomEE 10.0.27" />
@@ -325,7 +418,7 @@
       <workItem from="1668045176625" duration="1119000" />
       <workItem from="1668046705459" duration="5128000" />
       <workItem from="1668083206624" duration="36827000" />
-      <workItem from="1668190778271" duration="5666000" />
+      <workItem from="1668190778271" duration="36384000" />
     </task>
     <servers />
   </component>
@@ -342,5 +435,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

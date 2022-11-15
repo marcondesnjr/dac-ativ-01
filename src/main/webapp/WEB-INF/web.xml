@@ -28,4 +28,9 @@
         <param-value>nova-dark</param-value>
     </context-param>
 
+    <context-param>
+        <param-name>facelets.DEVELOPMENT</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
 </web-app>

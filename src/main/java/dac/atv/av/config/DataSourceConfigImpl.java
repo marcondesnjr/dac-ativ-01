@@ -25,7 +25,7 @@ public class DataSourceConfigImpl implements DataSourceConfig{
         Class.forName((String) dbConfig.get("driver"));
         this.ds.setJdbcUrl((String) dbConfig.get("url"));
         this.ds.setUsername((String) dbConfig.get("user"));
-        this.ds.setPassword((String) dbConfig.get("password")); //TODO weird conversion
+        this.ds.setPassword((String) dbConfig.get("password"));
     }
 
     @Override

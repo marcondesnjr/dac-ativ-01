@@ -16,28 +16,28 @@
             <div class="">
                 <h4>Cadastro</h4>
                 <div class="grid ui-fluid">
-                                        <div class="col-12">
+                    <div class="col-12">
                         <div class="ui-inputgroup">
                             <div class="ui-inputgroup-addon"><i class="pi pi-user"/></div>
                             <p:inputText
-                                placeholder="Nome"
-                                value="#{addDependente.nome}"
-                                validator="dependenteNameValidator"
+                                    placeholder="Nome"
+                                    value="#{addPessoaView.dpNome}"
+                                    validator="dependenteNameValidator"
                             />
                         </div>
                     </div>
 
                     <div class="col-12">
                         <p:calendar
-                            placeholder="Data de Nascimento"
-                            value="#{addDependente.dataDeNascimento}"
-                            validator="dependenteDtNascValidator"
+                                placeholder="Data de Nascimento"
+                                value="#{addPessoaView.dpDataNascimento}"
+                                validator="dependenteDtNascValidator"
                         />
                     </div>
 
                     <div class="col-12">
                         <div class="col-4">
-                            <p:commandButton value="Salvar" action="#{addDependente.salvar()}"/>
+                            <p:commandButton value="Salvar" action="#{addPessoaView.salvarDependente()}"/>
                         </div>
                     </div>
                 </div>
