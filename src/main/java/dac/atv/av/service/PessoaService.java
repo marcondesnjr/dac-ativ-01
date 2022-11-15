@@ -58,9 +58,16 @@ public class PessoaService implements Serializable {
     }
 
     public void removerPessoa(Long id) throws SQLException {
+        var pessoa = pessoaRepository.findById(id)
+                .orElseThrow(()-> new EntityNotFoundException("Não foi encontrado Pessoa com id: "+id));
+        pessoaRepository.delete(id);
+        dependenteRepository.delete(pessoa.getDependente().getId());
+    }
 
-        dependenteRepository.delete(id);
+    public Collection<PessoaDto> listarPessoasByCpf(String cpf) throws SQLException {
 
+        var pessoas = pessoaRepository.findByCpf(cpf);
+        return pessoas.stream().map(DtoConverter::toPessoaDto).toList();
     }
 
 

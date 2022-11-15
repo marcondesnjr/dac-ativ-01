@@ -11,55 +11,59 @@ import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
 import java.sql.SQLException;
-import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 @Named
 @ViewScoped
-@RequiredArgsConstructor(onConstructor = @__({@Inject}))
 @Getter @Setter
-public class AddPessoaView implements Serializable {
+@RequiredArgsConstructor(onConstructor = @__({@Inject}))
+public class EditPessoaView implements Serializable {
 
-    @Inject
     @NotNull
-    private DependenteController dependenteController;
     @Inject
-    @NotNull
     private PessoaController pessoaController;
+    @NotNull
+    @Inject
+    private DependenteController dependenteController;
 
+    private long id;
     private String cpf;
     private String nome;
-    private Long dependenteId;
-
-    private String dpNome;
-    private LocalDate dpDataNascimento;
-
+    private Long dptId;
     private List<DependenteDto> dependenteDtoList;
 
     @PostConstruct
     private void init() throws SQLException {
+        FacesContext fc = FacesContext.getCurrentInstance();
+        Map<String, String> params = fc.getExternalContext().getRequestParameterMap();
+        if(!params.containsKey("id")){
+            return;
+        }
+        long requestId = Long.parseLong(params.get("id"));
+        var pessoaDto = pessoaController.lerPessoa(requestId);
+        this.id = pessoaDto.getId();
+        this.cpf = pessoaDto.getCpf();
+        this.nome = pessoaDto.getNome();
+        this.dptId = pessoaDto.getDependente().getId();
         updateDependenteList();
     }
 
-    public void salvarDependente() throws SQLException {
-        dependenteController.salvarDependente(dpNome, dpDataNascimento);
-        updateDependenteList();
-    }
-
-    public void salvarPessoa() throws SQLException {
-        pessoaController.salvarPessoa(this.cpf, this.nome, this.dependenteId);
+    public void updatePessoa() throws SQLException {
+        pessoaController.atualizarPessoa(this.id, this.cpf, this.nome, this.dptId);
         FacesContext.getCurrentInstance()
-                .addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Cliente Cadastrado",null));
+                .addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,
+                        "Dados Salvos", null));
     }
 
     private void updateDependenteList() throws SQLException {
         this.dependenteDtoList = dependenteController.listarTodosDependentes();
     }
+
 
 }

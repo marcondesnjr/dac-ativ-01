@@ -1,4 +1,4 @@
-FROM tomee:9.0.0-M8-webprofile
-ENV CATALINA_HOME=/usr/local/tomee
-ADD target/Dac-Atividade-Av-01-1.0-SNAPSHOT.war $CATALINA_HOME/webapps/Dac-Atv.war
-CMD ["catalina.sh", "run"]
+FROM quay.io/wildfly/wildfly:27.0.0.Final-jdk17
+ADD target/Dac-Atividade-Av-01-1.0-SNAPSHOT.war /opt/jboss/wildfly/standalone/deployments/
+RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#1111 --silent
+CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]

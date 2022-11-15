@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+>
+<ui:composition template="../layout/layout.xhtml">
+    <ui:define name="content">
+        <div class="card" style="margin-top: 50px">
+            <div class="col-12">
+                <h:form>
+                    <div class="ui-inputgroup">
+                        <p:inputText placeholder="Buscar" value="#{listPessoaView.campoBusca}"/>
+                        <p:commandButton value="Buscar" action="#{listPessoaView.filtrar()}"/>
+                    </div>
+                </h:form>
+            </div>
+
+            <div class="col-12">
+            <p:dataTable
+                    var="pessoa"
+                    value="#{listPessoaView.pessoaDtoList}"
+                    rowKey="#{pessoa.id}"
+            >
+                <p:autoUpdate/>
+                <f:facet name="header">
+                    Clique para editar
+                </f:facet>
+
+                <p:column headerText="ID" width="25">
+                    <a href="#{request.contextPath}/pessoa/edit.xhtml?id=#{pessoa.id}">
+                        <h:outputText value="#{pessoa.id}"/>
+                    </a>
+                </p:column>
+                <p:column headerText="Nome">
+                    <a href="#{request.contextPath}/pessoa/edit.xhtml?id=#{pessoa.id}">
+                        <h:outputText value="#{pessoa.nome}"/>
+                    </a>
+                </p:column>
+                <p:column headerText="CPF">
+                    <a href="#{request.contextPath}/pessoa/edit.xhtml?id=#{pessoa.id}">
+                        <h:outputText value="#{pessoa.cpf}"/>
+                    </a>
+                </p:column>
+                <p:column headerText="Dependente">
+                    <h:outputText value="#{pessoa.dependente.nome}"/>
+                </p:column>
+                <p:column headerText="Del" width="25">
+                    <p:commandLink
+                            action="#{listPessoaView.removePessoa(pessoa.id)}">
+                        <i class="pi pi-trash"/>
+                    </p:commandLink>
+                </p:column>
+            </p:dataTable>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>

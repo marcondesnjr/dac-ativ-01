@@ -42,12 +42,23 @@ public class PessoaController implements Serializable {
         return pessoaService.lerPessoa(id);
     }
 
-    public PessoaDto atualizarPessoa(PessoaDto pessoaDto) throws SQLException {
+    public PessoaDto atualizarPessoa(Long id, String cpf, String nome, Long dptId) throws SQLException {
+        var pessoaDto = new PessoaDto();
+        pessoaDto.setId(id);
+        pessoaDto.setCpf(cpf);
+        pessoaDto.setNome(nome);
+        var dependenteDto = new DependenteDto();
+        dependenteDto.setId(dptId);
+        pessoaDto.setDependente(dependenteDto);
         return pessoaService.updatePessoa(pessoaDto);
     }
 
     public void excluirPessoa(Long id) throws SQLException {
         pessoaService.removerPessoa(id);
+    }
+
+    public List<PessoaDto> listarTodasPessoasByCpf(String cpf) throws SQLException {
+        return pessoaService.listarPessoasByCpf(cpf).stream().toList();
     }
 
 

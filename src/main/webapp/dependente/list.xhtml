@@ -9,39 +9,43 @@
 
 <ui:composition template="../layout/layout.xhtml">
     <ui:define name="content">
-        <h:form>
-        <p:dataTable
-            id="products"
-            var="dependente"
-            value="#{listarDependenteView.dependenteDtoList}"
-            rowKey="#{dependente.id}"
-        >
-            <p:autoUpdate/>
-            <f:facet name="header">
-                Clique para editar
-            </f:facet>
+        <div class="col-12" style="margin-top: 50px">
+            <h:form>
+                <p:messages closable="true">
+                    <p:autoUpdate/>
+                </p:messages>
+                <p:dataTable
+                        var="dependente"
+                        value="#{listarDependenteView.dependenteDtoList}"
+                        rowKey="#{dependente.id}"
+                >
+                    <p:autoUpdate/>
+                    <f:facet name="header">
+                        Clique para editar
+                    </f:facet>
 
-            <p:column headerText="ID" width="25">
-                <a href="#{request.contextPath}/dependente/edit.xhtml?id=#{dependente.id}">
-                    <h:outputText value="#{dependente.id}" />
-                </a>
-            </p:column>
-            <p:column headerText="Nome">
-                <a href="#{request.contextPath}/dependente/edit.xhtml?id=#{dependente.id}">
-                    <h:outputText value="#{dependente.nome}" />
-                </a>
-            </p:column>
-            <p:column headerText="Data de Nascimento">
-                <h:outputText value="#{dependente.dataDeNascimento}" />
-            </p:column>
-            <p:column headerText="Del" width="25">
-                <p:commandLink
-                        action="#{listarDependenteView.removeDependente(dependente.id)}">
-                    <i class="pi pi-trash"/>
-                </p:commandLink>
-            </p:column>
-        </p:dataTable>
-        </h:form>
+                    <p:column headerText="ID" width="25">
+                        <a href="#{request.contextPath}/dependente/edit.xhtml?id=#{dependente.id}">
+                            <h:outputText value="#{dependente.id}"/>
+                        </a>
+                    </p:column>
+                    <p:column headerText="Nome">
+                        <a href="#{request.contextPath}/dependente/edit.xhtml?id=#{dependente.id}">
+                            <h:outputText value="#{dependente.nome}"/>
+                        </a>
+                    </p:column>
+                    <p:column headerText="Data de Nascimento">
+                        <h:outputText value="#{dependente.dataDeNascimento}"/>
+                    </p:column>
+                    <p:column headerText="Del" width="25">
+                        <p:commandLink
+                                action="#{listarDependenteView.removeDependente(dependente.id)}">
+                            <i class="pi pi-trash"/>
+                        </p:commandLink>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </div>
     </ui:define>
 </ui:composition>
 </html>

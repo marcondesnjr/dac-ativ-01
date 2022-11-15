@@ -10,23 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4bedc5-4375-4243-827a-113e3d143148" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/config/DataSourceConfigImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/config/DataSourceConfigImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/dependente/AddDependente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/validator/DependenteDtNascValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/validator/DependenteDtNascValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/validator/DependenteNameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/validator/DependenteNameValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/PessoaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/PessoaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/DependenteEmJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile-webapp" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile-webapp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/PessoaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/DependenteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dependente/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dependente/add.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/dependente/ListarDependenteView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/dependente/ListarDependenteView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/pessoa/AddPessoaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/pessoa/AddPessoaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config-docker.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config-docker.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dependente/list.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dependente/list.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +33,9 @@
       <list>
         <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="jsf" />
         <option value="NamedBean" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,8 +49,15 @@
     <setting file="file://$PROJECT_DIR$/create-tables.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dac/atv/av/controller/PessoaController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/dac/atv/av/view/pessoa/EditPessoaView.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/dependente/list.xhtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/pessoa/list.xhtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/startup.sh" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -418,7 +420,7 @@
       <workItem from="1668045176625" duration="1119000" />
       <workItem from="1668046705459" duration="5128000" />
       <workItem from="1668083206624" duration="36827000" />
-      <workItem from="1668190778271" duration="36384000" />
+      <workItem from="1668190778271" duration="45380000" />
     </task>
     <servers />
   </component>

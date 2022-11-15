@@ -3,6 +3,8 @@ package dac.atv.av.view.dependente;
 import dac.atv.av.controller.DependenteController;
 import dac.atv.av.service.dto.DependenteDto;
 import jakarta.annotation.PostConstruct;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
@@ -31,8 +33,14 @@ public class ListarDependenteView implements Serializable {
     }
 
     public void removeDependente(Long id) throws SQLException {
-        dependenteController.excluirDependente(id);
-        updateDependenteList();
+        try {
+            dependenteController.excluirDependente(id);
+            updateDependenteList();
+        }catch (SQLException ex){
+            FacesContext.getCurrentInstance()
+                    .addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
+                            "Não foi possível excluir o dependente",null));
+        }
     }
 
     private void updateDependenteList() throws SQLException {

@@ -26,6 +26,8 @@ public class PessoasEmJDBC implements PessoaRepository {
 
     @Inject
     private DataSource dataSource;
+    @Inject
+    private PessoaResultSetHandler pessoaResultSetHandler;
 
 
     @Override
@@ -44,7 +46,7 @@ public class PessoasEmJDBC implements PessoaRepository {
     public Optional<Pessoa> findById(Long id) throws SQLException {
         String sql = "SELECT * FROM PESSOA WHERE id = ?";
         QueryRunner qr = new QueryRunner(dataSource);
-        return qr.query(sql, new PessoaResultSetHandler(), id)
+        return qr.query(sql, pessoaResultSetHandler, id)
                 .stream().findFirst();
     }
 
@@ -52,18 +54,18 @@ public class PessoasEmJDBC implements PessoaRepository {
     public Collection<Pessoa> findAll() throws SQLException {
         String sql = "SELECT * FROM PESSOA";
         QueryRunner qr = new QueryRunner(dataSource);
-        return qr.query(sql, new PessoaResultSetHandler())
+        return qr.query(sql, pessoaResultSetHandler)
                 .stream().toList();
     }
 
     @Override
     public Optional<Pessoa> update(Pessoa entity) throws SQLException {
         String sql = "UPDATE pessoa " +
-                "SET cpf=?, nome=?, dependente_id=?" +
+                "SET cpf=?, nome=?, dependente_id=? " +
                 "WHERE id=?";
 
         QueryRunner qr = new QueryRunner(dataSource);
-        int lines = qr.update(sql, entity.getCpf(), entity.getNome(), entity.getId(), entity.getDependente().getId());
+        int lines = qr.update(sql, entity.getCpf(), entity.getNome(), entity.getDependente().getId(), entity.getId());
         if(lines == 0){
             return Optional.empty();
         }
@@ -80,9 +82,9 @@ public class PessoasEmJDBC implements PessoaRepository {
 
     @Override
     public Optional<Pessoa> findByCpf(String cpf) throws SQLException {
-        String sql = "SELECT * FROM PESSOA WHERE cpf = ?";
+        String sql = "SELECT * FROM PESSOA WHERE cpf ILIKE ?";
         QueryRunner qr = new QueryRunner(dataSource);
-        return qr.query(sql, new PessoaResultSetHandler(), cpf)
+        return qr.query(sql, pessoaResultSetHandler, "%"+cpf+"%")
                 .stream().findFirst();
     }
 
@@ -101,6 +103,7 @@ public class PessoasEmJDBC implements PessoaRepository {
             while (resultSet.next()){
                 var pessoa = new Pessoa();
                 pessoa.setId(resultSet.getLong("id"));
+                pessoa.setCpf(resultSet.getString("cpf"));
                 pessoa.setNome(resultSet.getString("nome"));
                 var dptId = resultSet.getLong("dependente_id");
                 var dpt = dependenteRepository.findById(dptId)
