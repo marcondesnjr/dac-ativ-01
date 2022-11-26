@@ -13,15 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile-webapp" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile-webapp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/repository/impl/PessoasEmJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/service/PessoaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/dependente/ListarDependenteView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/dependente/ListarDependenteView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/pessoa/AddPessoaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dac/atv/av/view/pessoa/AddPessoaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config-docker.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config-docker.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dependente/list.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dependente/list.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/navbar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dependente/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dependente/add.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pessoa/add.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +51,6 @@
     <setting file="file://$PROJECT_DIR$/src/main/webapp/dependente/list.xhtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/pessoa/list.xhtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/startup.sh" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -95,6 +88,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/jmnj/Documentos/Projects/Java/pluspet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -190,20 +188,6 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Dac-Atividade-Av-01:war exploded" />
         </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="SERVER" value="" />
-        <option name="BINDING_SET_NAME" value="" />
-        <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="" />
-        <option name="USERNAME" value="" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="JBoss" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="All in Dac-Atividade-Av-01" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
@@ -402,6 +386,18 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final" />
       <item itemvalue="JUnit.All in Dac-Atividade-Av-01" />
@@ -420,7 +416,8 @@
       <workItem from="1668045176625" duration="1119000" />
       <workItem from="1668046705459" duration="5128000" />
       <workItem from="1668083206624" duration="36827000" />
-      <workItem from="1668190778271" duration="45380000" />
+      <workItem from="1668190778271" duration="49599000" />
+      <workItem from="1669500476540" duration="3637000" />
     </task>
     <servers />
   </component>

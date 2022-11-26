@@ -8,63 +8,63 @@
       xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-   <h:outputStylesheet library="css" name="primeflex.css"/>
+    <h:outputStylesheet library="css" name="primeflex.css"/>
 </h:head>
 
 <ui:composition template="../layout/layout.xhtml">
-   <ui:define name="content">
-      <div class="flex flex-grow-1 justify-content-center align-items-center">
-         <h:form>
-            <p:messages closable="true">
-               <p:autoUpdate/>
-            </p:messages>
-            <div class="cadastro-pessoa">
-               <h4>Cadastro</h4>
-               <div class="grid ui-fluid">
-                  <div class="col-12">
-                     <div class="ui-inputgroup">
-                        <div class="ui-inputgroup-addon">123</div>
-                        <p:inputMask mask="999.999.999-99" placeholder="CPF" value="#{addPessoaView.cpf}"/>
-                     </div>
-                  </div>
-                  <div class="col-12">
-                     <div class="ui-inputgroup">
-                        <div class="ui-inputgroup-addon"><i class="pi pi-user"/></div>
-                        <p:inputText
-                                placeholder="Nome"
-                                value="#{addPessoaView.nome}"
-                        />
-                     </div>
-                  </div>
+    <ui:define name="content">
+        <div class="flex flex-grow-1 justify-content-center align-items-center">
+            <h:form>
+                <p:messages closable="true">
+                    <p:autoUpdate/>
+                </p:messages>
+                <div class="cadastro-pessoa">
+                    <h4>Cadastro</h4>
+                    <div class="grid ui-fluid">
+                        <div class="col-12">
+                            <div class="ui-inputgroup">
+                                <div class="ui-inputgroup-addon">123</div>
+                                <p:inputMask mask="999.999.999-99" placeholder="CPF" value="#{addPessoaView.cpf}"/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="ui-inputgroup">
+                                <div class="ui-inputgroup-addon"><i class="pi pi-user"/></div>
+                                <p:inputText
+                                        placeholder="Nome"
+                                        value="#{addPessoaView.nome}"
+                                />
+                            </div>
+                        </div>
 
-                  <div class="col-12">
-                     <div class="ui-inputgroup">
-                        <p:selectOneMenu value="#{addPessoaView.dependenteId}">
-                           <f:selectItem itemValue="#{null}" itemLabel="Dependente" itemDisabled="true"/>
-                           <f:selectItems
-                              value="#{addPessoaView.dependenteDtoList}"
-                              var="item"
-                              itemValue="#{item.id}"
-                              itemLabel="#{item.id} - #{item.nome}"
-                           />
-                           <p:autoUpdate/>
-                        </p:selectOneMenu>
-                        <p:commandButton value="+" onclick="PF('addDependente').show()"/>
-                     </div>
-                  </div>
+                        <div class="col-12">
+                            <div class="ui-inputgroup">
+                                <p:selectOneMenu value="#{addPessoaView.dependenteId}">
+                                    <f:selectItem itemValue="#{null}" itemLabel="Dependente" itemDisabled="true"/>
+                                    <f:selectItems
+                                            value="#{addPessoaView.dependenteDtoList}"
+                                            var="item"
+                                            itemValue="#{item.id}"
+                                            itemLabel="#{item.id} - #{item.nome}"
+                                    />
+                                    <p:autoUpdate/>
+                                </p:selectOneMenu>
+                                <p:commandButton value="+" onclick="PF('addDependente').show()"/>
+                            </div>
+                        </div>
 
-                  <div class="col-12">
-                     <div class="col-4">
-                        <p:commandButton value="Salvar" action="#{addPessoaView.salvarPessoa()}"/>
-                     </div>
-                  </div>
-               </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <p:commandButton value="Salvar" action="#{addPessoaView.salvarPessoa()}"/>
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-         </h:form>
-      </div>
+                </div>
+            </h:form>
+        </div>
 
-      <ui:include src="../dependente/add.xhtml"/>
-   </ui:define>
+        <ui:include src="../dependente/add.xhtml"/>
+    </ui:define>
 </ui:composition>
 </html>

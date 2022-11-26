@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3.8'
 
 services:
 
@@ -18,7 +18,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-webapp
+      network: host
     restart: always
     ports:
       - "8888:8080"
       - "9999:9990"
+    depends_on:
+      - db
